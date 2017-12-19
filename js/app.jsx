@@ -8,28 +8,54 @@ import { Router,
   hashHistory
 } from 'react-router';
 
+class Header extends React.Component{
+  render(){
+    return <header>
+      <img src="../images/logo-zajebiste.png" alt="to jest logo"/>
+      <nav>
+      <ul>
+        <li>
+          <IndexLink to="/" >Home</IndexLink>
+        </li>
+        <li>
+          <IndexLink to="/blog" >Blog</IndexLink>
+        </li>
+        <li>
+          <IndexLink to="/about" >About</IndexLink>
+        </li>
+      </ul>
+      </nav>
+    </header>
+  }
+}
+class Slider extends React.Component {
+  render(){
+    return <section>
+      <ul>
+        <li><h2>Pierwszy slajd</h2><button> Kliknij se!</button></li>
+        <li><h2>Drugi slajd</h2><button> Kliknij se!</button></li>
+        <li><h2>Trzeci slajd</h2><button> Kliknij se!</button></li>
+        <li><h2>Czwarty slajd</h2><button> Kliknij se!</button></li>
+      </ul>
+    </section>
+  }
+}
 
 class Main extends React.Component{
   render(){
     return <div id="main">
-            <header>
-              <img src="../images/logo-zajebiste.png" alt="to jest logo"/>
-              <nav>
-              <ul>
-                <li>
-                  <IndexLink to="/" >Home</IndexLink>
-                </li>
-                <li>
-                  <IndexLink to="/blog" >Blog</IndexLink>
-                </li>
-                <li>
-                  <IndexLink to="/about" >About</IndexLink>
-                </li>
-              </ul>
-              </nav>
-            </header>
-            
-
+              <Header/>
+              <Slider />
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <footer>
+            </footer>
     </div>
   }
 }
