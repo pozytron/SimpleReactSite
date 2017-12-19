@@ -1,7 +1,7 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-   entry: ["whatwg-fetch","./js/zadanie00.jsx"],
+   entry: ["whatwg-fetch","./js/app.jsx"],
    output: {
        filename: "./js/out.js"
    },
