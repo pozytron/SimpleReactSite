@@ -2,7 +2,7 @@ import React from 'react';
 
 class Slider extends React.Component {
   render(){
-    return <section>
+    return <section className="row">
       <ul>
         <li><h2>Pierwszy slajd</h2><button> Kliknij se!</button></li>
         <li><h2>Drugi slajd</h2><button> Kliknij se!</button></li>

@@ -18,10 +18,13 @@ import Slider from "./components/Slider/"
 import VideoSection from "./components/VideoSection/"
 import StaffSection from "./components/StaffSection/"
 
+//import templates
+import Homepage from "./templates/Homepage/"
+
 
 class Main extends React.Component{
   render(){
-    return <div id="main">
+    return <div  className="container">
               <Header/>
               <Slider />
               <GaleryStripe />
@@ -33,13 +36,7 @@ class Main extends React.Component{
   }
 }
 
-class Homepage extends React.Component {
-  render(){
-    return <div>
-              {this.props.children}
-           </div>
-  }
-}
+
 class App extends React.Component{
   render(){
     return <Router history={hashHistory}>
