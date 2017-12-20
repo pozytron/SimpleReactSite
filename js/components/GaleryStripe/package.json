@@ -1,0 +1,6 @@
+{
+  "name": "GaleryStripe",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GaleryStripe.jsx"
+}
