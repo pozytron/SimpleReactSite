@@ -3,19 +3,17 @@ import {IndexLink} from 'react-router';
 
 class Navigation extends React.Component{
   render(){
-    return <nav>
-    <ul>
-      <li>
-        <IndexLink to="/" >Home</IndexLink>
-      </li>
-      <li>
-        <IndexLink to="/blog" >Blog</IndexLink>
-      </li>
-      <li>
-        <IndexLink to="/about" >About</IndexLink>
-      </li>
-    </ul>
-    </nav>
+    return <ul className="navbar-nav">
+            <li className="nav-item">
+              <IndexLink className="nav-link" to="/">Home</IndexLink>
+            </li>
+            <li className="nav-item">
+              <IndexLink className="nav-link" to="/blog">Blog</IndexLink>
+            </li>
+            <li className="nav-item">
+              <IndexLink className="nav-link" to="/about">About</IndexLink>
+            </li>
+        </ul>
   }
 }
 export default Navigation
